@@ -10,7 +10,9 @@ import LastImages from './components/LastImages.vue'
 import parallex1 from '/src/assets/1.jpeg'
 import parallex2 from '/src/assets/2.jpeg'
 import parallex3 from '/src/assets/3.jpeg'
-import backgroundimg from '/src/assets/background.webp'
+//import backgroundimg from '/src/assets/background.webp'
+
+import AI_Background from './assets/AI_Background.png'
 import Lenis from 'lenis'
 
 import { ref } from 'vue'
@@ -58,7 +60,7 @@ const props = defineProps({
             <!-- Sticky Hintergrund (bleibt im Viewport) -->
             <div class="sticky top-0 h-screen overflow-hidden">
                 <img
-                    src="/src/assets/AI_background.png"
+                    :src="AI_Background"
                     alt=""
                     class="absolute inset-0 h-full w-full object-cover object-center"
                 />
