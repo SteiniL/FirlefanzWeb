@@ -3,6 +3,10 @@ import { useScroll } from '@vueuse/core'
 import { computed } from 'vue'
 import { useTransform } from 'motion-v'
 
+import logo_neu_neu from './assets/logo_neu_neu.png'
+import logo_neu_neu_h from './assets/logo_neu_neu_h.png'
+import hero from './assets/hero.png'
+
 const { y } = useScroll(window)
 
 const scale = computed(() => {
@@ -22,7 +26,7 @@ const brightness = computed(() => {
 <template>
     <section class="relative h-screen w-full overflow-hidden">
         <img
-            src="/src/assets/hero.jpg"
+            :src="hero"
             alt="Hero"
             class="absolute inset-0 h-full w-full object-cover"
             :style="{ filter: `brightness(${brightness})` }"
@@ -33,7 +37,7 @@ const brightness = computed(() => {
             class="relative z-10 flex h-full items-center justify-center p-4 md:hidden"
         >
             <img
-                src="/src/assets/logo_neu_neu_h.png"
+                :src="ogo_neu_neu_h"
                 alt="Logo"
                 class="max-h-screen max-w-screen overflow-hidden object-contain transition-transform duration-300 ease-out"
                 :style="{ transform: `scale(${scale})` }"
@@ -44,7 +48,7 @@ const brightness = computed(() => {
             class="relative z-10 hidden h-full items-center justify-center p-4 md:flex"
         >
             <img
-                src="/src/assets/logo_neu_neu.png"
+                :src="logo_neu_neu"
                 alt="Logo"
                 class="max-h-screen max-w-screen overflow-hidden object-contain transition-transform duration-300 ease-out"
                 :style="{ transform: `scale(${scale})` }"
