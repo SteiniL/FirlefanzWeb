@@ -37,7 +37,7 @@ const brightness = computed(() => {
             class="relative z-10 flex h-full items-center justify-center p-4 md:hidden"
         >
             <img
-                :src="ogo_neu_neu_h"
+                :src="logo_neu_neu_h"
                 alt="Logo"
                 class="max-h-screen max-w-screen overflow-hidden object-contain transition-transform duration-300 ease-out"
                 :style="{ transform: `scale(${scale})` }"
