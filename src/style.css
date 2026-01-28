@@ -1,0 +1,125 @@
+@import 'tailwindcss';
+@import 'lenis/dist/lenis.css';
+
+@font-face {
+    font-family: salted;
+    src: url(../src/assets/fonts/Salted\ Regular.ttf);
+}
+
+@font-face {
+    font-family: futuraCondMedium;
+    src: url(../src/assets/fonts/Futura\ PT\ Cond\ Medium.ttf);
+}
+
+@theme {
+    --font-display: 'Poppins', 'sans-serif';
+    --font-salted: 'salted', 'sans-serif';
+    --font-FuturaCondMedium: 'futuraCondMedium', 'sans-serif';
+
+    /* --color-d-dark: oklch(0.3427 0.056 241.38);
+    --color-d-mid: oklch(0.4014 0.0685 242.8);
+    --color-d-light: oklch(0.5015 0.0579 241.49);
+    --color-d-highlight: oklch(0.822 0.0246 55.2); */
+    /*
+    --color-d-dark: oklch(0.3602 0.0356 110.25);
+    --color-d-mid: oklch(0.6284 0.0212 167.53);
+    --color-d-light: oklch(0.7418 0.044 75.27);
+    --color-d-highlight: oklch(0.9526 0.0159 102.83);
+    */
+
+    --color-d-dark: oklch(0.3602 0.0356 110.25);
+    --color-d-mid: oklch(0.2164 0.0575 11.12);
+    --color-d-light: oklch(0.7418 0.044 75.27);
+    --color-d-highlight: oklch(0.9526 0.0159 102.83);
+
+    /* --color-d-dark: oklch(0.2749 0.0188 258.37);
+    --color-d-mid: oklch(0.3623 0.0154 259.81);
+    --color-d-light: oklch(0.6352 0.0268 77.34);
+    --color-d-highlight: oklch(0.8635 0.0363 79.65); */
+
+    /* --color-d-dark: oklch(0.2395 0.039 132.25);
+    --color-d-mid: oklch(0.3205 0.0539 134.53);
+    --color-d-light: oklch(0.436 0.0884 151.71);
+    --color-d-highlight: oklch(0.5252 0.1086 159.06); */
+}
+
+@layer components {
+    .card {
+        @apply transform rounded-lg text-center text-white shadow-[0px_20px_20px_-31px_#000000] shadow-[inset_0px_20px_20px_-31px_#ffffff] transition duration-300 hover:scale-105 hover:shadow-lg;
+    }
+
+    .fx-link {
+        @apply relative inline-block px-1;
+    }
+
+    /* Clean underline (expands after a short delay) */
+    .fx-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background: currentColor; /* matches the text color */
+        transition: width 300ms ease;
+    }
+    .fx-link:hover::after,
+    .fx-link:focus-visible::after {
+        width: 100%;
+        transition-delay: 180ms; /* starts after the glitch */
+    }
+
+    /* Glitchy underline (brief, noisy, then fades) */
+    .fx-link::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        opacity: 0;
+        /* noisy stripe pattern */
+        background: repeating-linear-gradient(
+            90deg,
+            currentColor 0 2px,
+            transparent 2px 4px
+        );
+        transform: translateY(0);
+        pointer-events: none;
+    }
+    .fx-link:hover::before,
+    .fx-link:focus-visible::before {
+        animation: fx-glitch-underline 220ms steps(7) both;
+    }
+}
+
+/* The jitter + fade out */
+@keyframes fx-glitch-underline {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+        background-position: 0 0;
+    }
+    20% {
+        transform: translateY(-1px);
+        background-position: -3px 0;
+    }
+    40% {
+        transform: translateY(1px);
+        background-position: 2px 0;
+    }
+    60% {
+        transform: translateY(-0.5px);
+        background-position: -2px 0;
+    }
+    80% {
+        opacity: 0.7;
+        transform: translateY(0.5px);
+        background-position: 1px 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+        background-position: 0 0;
+    }
+}
