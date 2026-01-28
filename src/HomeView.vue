@@ -224,7 +224,7 @@ const props = defineProps({
                             <!-- Right: Telefunk -->
                             <div class="">
                                 <h3 class="font-salted text-lg font-semibold">
-                                    Telefunk
+                                    Firlefunk
                                 </h3>
                                 <p class="mt-3 text-xs text-white/70">
                                     Du möchtest keinen Firlefanz verpassen? Dann
