@@ -3,9 +3,9 @@ import { useScroll } from '@vueuse/core'
 import { computed } from 'vue'
 import { useTransform } from 'motion-v'
 
-import logo_neu_neu from './assets/logo_neu_neu.png'
-import logo_neu_neu_h from './assets/logo_neu_neu_h.png'
-import hero from './assets/hero.png'
+import logo_neu_neu from '../assets/logo_neu_neu_h.png'
+import logo_neu_neu_h from '../assets/logo_neu_neu_h.png'
+import hero from '../assets/hero.png'
 
 const { y } = useScroll(window)
 
