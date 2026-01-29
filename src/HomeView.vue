@@ -113,9 +113,8 @@ const props = defineProps({
                         </div>
                         <div class="flex justify-center">
                             <iframe
-                                class="mt-10 shadow-2xl"
+                                class="mt-10 w-[70vw] max-w-[600px] shadow-2xl"
                                 src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1560.1704503567232!2d13.009482148715483!3d50.832892145212654!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sde!4v1769696093774!5m2!1sen!2sde"
-                                width="600"
                                 height="450"
                                 style="border: 1px solid black"
                                 allowfullscreen=""
