@@ -14,4 +14,10 @@ export default createRouter({
         { path: '/privacy', component: PrivacyView },
         { path: '/contact', component: ContactView },
     ],
+    scrollBehavior(to) {
+        if (to.hash) {
+            return { el: to.hash, behavior: 'smooth' }
+        }
+        return { top: 0 }
+    },
 })

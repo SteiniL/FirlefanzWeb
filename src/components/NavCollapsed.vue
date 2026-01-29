@@ -33,15 +33,35 @@ onBeforeUnmount(() => {
         <div
             v-if="open"
             id="floating-nav"
-            class="animate-slide-up mb-2 rounded-lg bg-indigo-900 p-4 text-white shadow-lg"
+            class="animate-slide-up bg-d-mid mb-2 rounded-lg p-4 text-white shadow-lg"
         >
             <ul class="space-y-2">
-                <li><a href="#home" class="fx-link">Festival</a></li>
-                <li><a href="#home" class="fx-link">Programm</a></li>
-                <li><a href="#home" class="fx-link">Tickets</a></li>
-                <li><a href="#home" class="fx-link">Impressionen</a></li>
-                <li><a href="#home" class="fx-link">Mitmachen</a></li>
-                <li><a href="#home" class="fx-link">FAQ</a></li>
+                <li>
+                    <RouterLink to="/#date" class="fx-link text-white">
+                        Home
+                    </RouterLink>
+                </li>
+                <li>
+                    <a
+                        href="https://tickets.firlefanz-festival.com"
+                        class="fx-link text-white"
+                    >
+                        Ticktes
+                    </a>
+                </li>
+                <li>
+                    <RouterLink to="/#location" class="fx-link text-white">
+                        Location
+                    </RouterLink>
+                </li>
+                <li>
+                    <RouterLink
+                        to="/contact/#contact"
+                        class="fx-link text-white"
+                    >
+                        Kontakt
+                    </RouterLink>
+                </li>
             </ul>
         </div>
 
@@ -49,7 +69,7 @@ onBeforeUnmount(() => {
         <div
             id="nav-toggle-btn"
             @click.stop="toggleNav"
-            class="flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-indigo-900 transition hover:bg-indigo-800"
+            class="bg-d-mid hover:bg-d-light flex h-16 w-16 cursor-pointer items-center justify-center rounded-full transition"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
