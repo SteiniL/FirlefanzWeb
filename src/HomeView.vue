@@ -68,7 +68,7 @@ const props = defineProps({
             </div>
 
             <!-- Content liegt über dem Sticky-Hintergrund und scrollt normal -->
-            <div class="relative z-10 -mt-[100vh]" id="date">
+            <div class="relative z-10 -mt-[100svh]" id="date">
                 <!-- Der eigentliche "Home"-Viewport -->
                 <div class="grid h-screen place-content-center">
                     <h1 class="font-salted text-5xl">Firlefanz Festival</h1>
@@ -84,13 +84,13 @@ const props = defineProps({
                         <h1 class="font-salted text-center text-5xl">
                             Location
                         </h1>
-                        <div class="mx-auto max-w-[70vw]">
+                        <div class="mx-auto max-w-[60vw]">
                             <p
-                                class="font-FuturaCondMedium text-d-mid pt-5 text-justify text-2xl hyphens-auto [text-align-last:justify]"
+                                class="font-FuturaCondMedium text-d-mid pt-5 text-center text-2xl hyphens-auto"
                                 lang="de"
                             >
                                 Dieses Jahr verändert sich bei uns einiges:
-                                größeres Team, größeres Festival – und damit wir
+                                größeres Team, größeres Festival. Und damit wir
                                 mehr Leuten Platz zum Tanzen geben können,
                                 ziehen wir auch um. Firlefanz 2026 findet an der
                                 Talsperre Euba, Nähe Chemnitz statt.
@@ -125,7 +125,7 @@ const props = defineProps({
                     </div>
                 </section>
 
-                <div class="mt-[20vh]"></div>
+                <div class="mt-[20svh]"></div>
             </div>
 
             <!--Footer-->
