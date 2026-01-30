@@ -84,9 +84,9 @@ const props = defineProps({
                         <h1 class="font-salted text-center text-5xl">
                             Location
                         </h1>
-                        <div class="mx-auto max-w-[60vw]">
+                        <div class="mx-auto max-w-[70vw]">
                             <p
-                                class="font-FuturaCondMedium text-d-mid pt-5 text-center text-2xl hyphens-auto"
+                                class="font-FuturaCondMedium text-d-mid max-w-[90ch] pt-5 text-center text-2xl text-pretty"
                                 lang="de"
                             >
                                 Dieses Jahr verändert sich bei uns einiges:
@@ -96,7 +96,7 @@ const props = defineProps({
                                 Talsperre Euba, Nähe Chemnitz statt.
                             </p>
                             <p
-                                class="font-FuturaCondMedium text-d-mid pt-5 text-center text-2xl hyphens-auto"
+                                class="font-FuturaCondMedium text-d-mid pt-5 text-center text-2xl"
                                 lang="de"
                             >
                                 📍 Talsperre Euba<br />
@@ -104,7 +104,7 @@ const props = defineProps({
                                 09128 Chemnitz<br />
                             </p>
                             <p
-                                class="font-FuturaCondMedium text-d-mid pt-5 text-center text-2xl hyphens-auto"
+                                class="font-FuturaCondMedium text-d-mid pt-5 text-center text-2xl"
                                 lang="de"
                             >
                                 Mehr Raum, mehr Natur, mehr Luft zum Tanzen in
