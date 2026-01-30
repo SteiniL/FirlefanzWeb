@@ -68,7 +68,7 @@ const props = defineProps({
             </div>
 
             <!-- Content liegt über dem Sticky-Hintergrund und scrollt normal -->
-            <div class="relative z-10 -mt-[100svh]" id="date">
+            <div class="relative z-10 -mt-[100vh]" id="date">
                 <!-- Der eigentliche "Home"-Viewport -->
                 <div class="grid h-screen place-content-center">
                     <h1 class="font-salted text-5xl">Firlefanz Festival</h1>
@@ -125,7 +125,7 @@ const props = defineProps({
                     </div>
                 </section>
 
-                <div class="mt-[20svh]"></div>
+                <div class="mt-[20vh]"></div>
             </div>
 
             <!--Footer-->
