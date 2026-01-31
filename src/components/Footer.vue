@@ -1,5 +1,5 @@
 <template>
-    <footer class="group bg-slate-950 text-white">
+    <footer class="group mt-[50dvh] bg-slate-950 text-white">
         <h1
             class="translate-y-20 bg-linear-to-r from-gray-400 to-gray-800 bg-clip-text text-center text-[12vw] leading-[100%] font-semibold text-transparent uppercase transition-all ease-linear group-hover:translate-y-4"
         >

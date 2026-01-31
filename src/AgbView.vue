@@ -44,7 +44,7 @@ const props = defineProps({
 <template>
     <div class="overflow-x-clip">
         <section
-            class="sticky top-0 flex h-screen w-full place-content-center bg-slate-950 text-white"
+            class="sticky top-0 flex h-dvh w-full place-content-center bg-slate-950 text-white"
         >
             <Hero />
         </section>
@@ -55,7 +55,7 @@ const props = defineProps({
         <!--Home-->
         <section class="relative bg-gray-300 text-black">
             <!-- Sticky Hintergrund (bleibt im Viewport) -->
-            <div class="sticky top-0 h-screen overflow-hidden">
+            <div class="sticky top-0 h-dvh overflow-hidden">
                 <img
                     :src="AI_Background"
                     alt=""
@@ -64,7 +64,7 @@ const props = defineProps({
             </div>
 
             <!-- Content liegt über dem Sticky-Hintergrund und scrollt normal -->
-            <div class="relative z-10 -mt-[100vh]">
+            <div class="relative z-10 -mt-[100dvh]">
                 <!-- Der eigentliche "Home"-Viewport -->
                 <div class="h-[10svh]"></div>
                 <div

@@ -24,7 +24,7 @@ const brightness = computed(() => {
 </script>
 
 <template>
-    <section class="relative h-screen w-full overflow-hidden">
+    <section class="relative h-dvh w-full overflow-hidden">
         <img
             :src="hero"
             alt="Hero"
@@ -39,7 +39,7 @@ const brightness = computed(() => {
             <img
                 :src="logo_neu_neu_h"
                 alt="Logo"
-                class="max-h-screen max-w-screen overflow-hidden object-contain transition-transform duration-300 ease-out"
+                class="max-h-dvh max-w-screen overflow-hidden object-contain transition-transform duration-300 ease-out"
                 :style="{ transform: `scale(${scale})` }"
             />
         </div>
@@ -50,7 +50,7 @@ const brightness = computed(() => {
             <img
                 :src="logo_neu_neu"
                 alt="Logo"
-                class="max-h-screen max-w-screen overflow-hidden object-contain transition-transform duration-300 ease-out"
+                class="max-h-dvh max-w-screen overflow-hidden object-contain transition-transform duration-300 ease-out"
                 :style="{ transform: `scale(${scale})` }"
             />
         </div>
@@ -83,8 +83,8 @@ const nextTranslate = computed(() => 40 - 40 * progress.value) // 40px → 0px
 
 <template>
     <main class="snap-y snap-mandatory">
-        <section class="relative h-[200vh] snap-start">
-            <div class="sticky top-0 h-screen overflow-hidden">
+        <section class="relative h-[200dvh] snap-start">
+            <div class="sticky top-0 h-dvh overflow-hidden">
                 <img
                     src="/src/assets/hero.jpg"
                     alt="Hero"

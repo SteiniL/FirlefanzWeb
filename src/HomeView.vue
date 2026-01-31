@@ -45,7 +45,7 @@ const props = defineProps({
 <template>
     <div class="overflow-x-clip">
         <section
-            class="sticky top-0 flex h-screen w-full place-content-center bg-slate-950 text-white"
+            class="sticky top-0 flex h-dvh w-full place-content-center bg-slate-950 text-white"
         >
             <Hero />
         </section>
@@ -59,7 +59,7 @@ const props = defineProps({
         <!--Home-->
         <section class="relative bg-gray-300 text-black">
             <!-- Sticky Hintergrund (bleibt im Viewport) -->
-            <div class="sticky top-0 h-screen overflow-hidden">
+            <div class="sticky top-0 h-dvh overflow-hidden">
                 <img
                     :src="AI_Background"
                     alt=""
@@ -68,10 +68,16 @@ const props = defineProps({
             </div>
 
             <!-- Content liegt über dem Sticky-Hintergrund und scrollt normal -->
-            <div class="relative z-10 -mt-[100vh]" id="date">
+            <div class="relative z-10 -mt-[100dvh] min-h-dvh" id="date">
                 <!-- Der eigentliche "Home"-Viewport -->
-                <div class="grid h-screen place-content-center">
-                    <h1 class="font-salted text-5xl">Firlefanz Festival</h1>
+                <div
+                    class="h-dvh place-content-center items-center justify-center"
+                >
+                    <h1
+                        class="font-salted mx-auto max-w-[90vw] text-center text-5xl"
+                    >
+                        Firlefanz Festival
+                    </h1>
                     <p
                         class="font-FuturaCondMedium text-d-mid pt-5 text-center text-3xl"
                     >
@@ -79,14 +85,16 @@ const props = defineProps({
                     </p>
                 </div>
 
-                <section id="location">
-                    <div class="grid h-screen place-content-center">
-                        <h1 class="font-salted text-center text-5xl">
+                <div class="relative z-10 min-h-dvh" id="location">
+                    <div class="h-dvh items-center justify-center">
+                        <h1
+                            class="font-salted text-center text-5xl text-pretty"
+                        >
                             Location
                         </h1>
                         <div class="mx-auto max-w-[70vw]">
                             <p
-                                class="font-FuturaCondMedium text-d-mid max-w-[90ch] pt-5 text-center text-2xl text-pretty"
+                                class="font-FuturaCondMedium text-d-mid mx-auto max-w-[90ch] pt-5 text-center text-2xl text-pretty"
                                 lang="de"
                             >
                                 Dieses Jahr verändert sich bei uns einiges:
@@ -123,9 +131,7 @@ const props = defineProps({
                             ></iframe>
                         </div>
                     </div>
-                </section>
-
-                <div class="mt-[20vh]"></div>
+                </div>
             </div>
 
             <!--Footer-->
