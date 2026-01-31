@@ -84,7 +84,7 @@ const props = defineProps({
                         Luca Steindorf<br /><br />
 
                         <b>Internetpräsenz:</b><br />
-                        Photo credit: <br />
+                        Photo credit: Lis Martin<br />
                         Designs: Alexandra B.
                     </p>
                 </div>
