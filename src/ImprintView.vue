@@ -70,8 +70,8 @@ const props = defineProps({
                         class="font-FuturaCondMedium text-d-mid pt-10 text-left text-3xl"
                     >
                         Firlefanz e.V.<br />
-                        Sickingenstraße 1<br />
-                        01309 Dresden<br /><br />
+                        Königsbrücker Str. 54<br />
+                        01099 Dresden<br /><br />
 
                         <b>Kontakt:</b><br />
                         Mail: kontakt(at)firlefanz-festival.com<br /><br />
