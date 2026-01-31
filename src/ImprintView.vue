@@ -64,7 +64,9 @@ const props = defineProps({
             </div>
 
             <div class="relative z-10 -mt-[100vh]">
-                <div class="grid h-screen place-content-center">
+                <div
+                    class="ml-[15vw] grid h-screen max-w-[70vw] place-content-center"
+                >
                     <h1 class="font-salted text-5xl">Impessum</h1>
                     <p
                         class="font-FuturaCondMedium text-d-mid pt-10 text-left text-3xl"

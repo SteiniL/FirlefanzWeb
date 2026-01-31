@@ -66,7 +66,9 @@ const props = defineProps({
             <!-- Content liegt über dem Sticky-Hintergrund und scrollt normal -->
             <div class="relative z-10 -mt-[100vh]">
                 <!-- Der eigentliche "Home"-Viewport -->
-                <div class="grid h-screen place-content-center">
+                <div
+                    class="ml-[15vw] grid h-screen max-w-[70vw] place-content-center"
+                >
                     <h1 class="font-salted text-5xl">Kontakt</h1>
                     <p
                         class="font-FuturaCondMedium text-d-mid pt-5 text-center text-3xl"
