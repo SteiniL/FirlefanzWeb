@@ -19,11 +19,10 @@
             <RouterLink to="/#location" class="fx-link text-white">
                 Location
             </RouterLink>
-            <!--
-                <RouterLink to="/contact/#contact" class="fx-link text-white">
-                    Kontakt
-                </RouterLink>
-                -->
+
+            <RouterLink to="/#aftermovie" class="fx-link text-white">
+                Aftermovie
+            </RouterLink>
         </nav>
     </div>
 </template>

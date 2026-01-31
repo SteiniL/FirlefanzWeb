@@ -71,7 +71,7 @@ const props = defineProps({
             <div class="relative z-10 -mt-[100dvh] min-h-dvh" id="date">
                 <!-- Der eigentliche "Home"-Viewport -->
                 <div
-                    class="h-dvh place-content-center items-center justify-center"
+                    class="min-h-dvh place-content-center items-center justify-center"
                 >
                     <h1
                         class="font-salted mx-auto max-w-[90vw] text-center text-5xl"
@@ -85,8 +85,11 @@ const props = defineProps({
                     </p>
                 </div>
 
-                <div class="relative z-10 min-h-dvh" id="location">
-                    <div class="h-dvh items-center justify-center">
+                <div
+                    class="relative z-10 h-auto min-h-dvh pt-[15dvh]"
+                    id="location"
+                >
+                    <div class="min-h-dvh items-center justify-center">
                         <h1
                             class="font-salted text-center text-5xl text-pretty"
                         >
@@ -121,13 +124,44 @@ const props = defineProps({
                         </div>
                         <div class="flex justify-center">
                             <iframe
-                                class="mt-10 w-[70vw] max-w-[600px] shadow-2xl"
+                                class="mt-10 aspect-600/450 max-h-[450px] w-[70vw] max-w-[600px] shadow-2xl"
                                 src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1560.1704503567232!2d13.009482148715483!3d50.832892145212654!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sde!4v1769696093774!5m2!1sen!2sde"
-                                height="450"
                                 style="border: 1px solid black"
                                 allowfullscreen=""
                                 loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="relative z-10 mt-[15dvh] min-h-dvh pt-[15dvh]"
+                    id="aftermovie"
+                >
+                    <div class="items-center justify-center">
+                        <h1
+                            class="font-salted text-center text-5xl text-pretty"
+                        >
+                            Letztes Jahr
+                        </h1>
+                        <div class="mx-auto max-w-[70vw]">
+                            <p
+                                class="font-FuturaCondMedium text-d-mid mx-auto max-w-[90ch] pt-5 text-center text-2xl text-pretty"
+                                lang="de"
+                            >
+                                Aftermovie - Firlefanz Festival 2025
+                            </p>
+                        </div>
+                        <div class="flex justify-center">
+                            <iframe
+                                class="mt-10 aspect-600/450 max-h-[450px] w-[70vw] max-w-[600px] shadow-2xl"
+                                src="https://www.youtube.com/embed/j3McESYhfv8?si=s8Cn1Eyij9WTqfIb"
+                                title="After Movie - Firlefanz Festival 2025"
+                                style="border: 1px solid black"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
                             ></iframe>
                         </div>
                     </div>

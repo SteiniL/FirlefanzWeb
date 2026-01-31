@@ -54,16 +54,12 @@ onBeforeUnmount(() => {
                         Location
                     </RouterLink>
                 </li>
-                <!--
-                    <li>
-                        <RouterLink
-                        to="/contact/#contact"
-                        class="fx-link text-white"
-                        >
-                        Kontakt
+
+                <li>
+                    <RouterLink to="/#aftermovie" class="fx-link text-white">
+                        Aftermovie
                     </RouterLink>
                 </li>
-                -->
             </ul>
         </div>
 
