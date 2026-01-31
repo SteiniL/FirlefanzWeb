@@ -12,7 +12,6 @@ import AI_Background from './assets/AI_Background.png'
 import parallex1 from '/src/assets/1.jpeg'
 import parallex2 from '/src/assets/2.jpeg'
 import parallex3 from '/src/assets/3.jpeg'
-import backgroundimg from '/src/assets/background.webp'
 import Lenis from 'lenis'
 
 import { ref } from 'vue'
@@ -64,15 +63,27 @@ const props = defineProps({
                 />
             </div>
 
-            <!-- Content liegt über dem Sticky-Hintergrund und scrollt normal -->
             <div class="relative z-10 -mt-[100vh]">
-                <!-- Der eigentliche "Home"-Viewport -->
                 <div class="grid h-screen place-content-center">
-                    <h1 class="font-salted text-5xl">Imprint</h1>
+                    <h1 class="font-salted text-5xl">Impessum</h1>
                     <p
-                        class="font-FuturaCondMedium text-d-mid pt-5 text-center text-3xl"
+                        class="font-FuturaCondMedium text-d-mid pt-10 text-left text-3xl"
                     >
-                        Imprint
+                        Firlefanz e.V.<br />
+                        Sickingenstraße 1<br />
+                        01309 Dresden<br /><br />
+
+                        <b>Kontakt:</b><br />
+                        Mail: kontakt(at)firlefanz-festival.com<br /><br />
+                        <b
+                            >Verantwortlich für den Inhalt nach § 55 Abs. 2
+                            RStV:</b
+                        ><br />
+                        Luca Steindorf<br /><br />
+
+                        <b>Internetpräsenz:</b><br />
+                        Photo credit: <br />
+                        Designs: Alexandra B.
                     </p>
                 </div>
             </div>

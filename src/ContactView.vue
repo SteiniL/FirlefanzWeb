@@ -12,7 +12,6 @@ import AI_Background from './assets/AI_Background.png'
 import parallex1 from '/src/assets/1.jpeg'
 import parallex2 from '/src/assets/2.jpeg'
 import parallex3 from '/src/assets/3.jpeg'
-import backgroundimg from '/src/assets/background.webp'
 import Lenis from 'lenis'
 
 import { ref } from 'vue'

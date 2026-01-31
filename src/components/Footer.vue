@@ -91,12 +91,19 @@
                         <nav
                             class="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2"
                         >
+                            <!--
                             <RouterLink
-                                to="/contact"
-                                class="text-sm text-white/80 transition hover:text-white"
+                            to="/contact"
+                            class="text-sm text-white/80 transition hover:text-white"
                             >
-                                Kontakt </RouterLink
-                            ><RouterLink
+                            Kontakt </RouterLink
+                        -->
+                            <a
+                                href="mailto:kontakt@firlefanz-festival.com"
+                                class="text-sm text-white/80 transition hover:text-white"
+                                >Kontakt</a
+                            >
+                            <RouterLink
                                 to="/imprint"
                                 class="text-sm text-white/80 transition hover:text-white"
                             >
@@ -105,7 +112,7 @@
                                 to="/privacy"
                                 class="text-sm text-white/80 transition hover:text-white"
                             >
-                                Privacy
+                                Datenschutz
                             </RouterLink>
                             <RouterLink
                                 to="/agb"
